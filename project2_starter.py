@@ -7,6 +7,8 @@ AI Usage: No AI use
 Example: AI helped with inheritance structure and method overriding concepts
 """
 
+import random
+
 # ============================================================================
 # PROVIDED BATTLE SYSTEM (DO NOT MODIFY)
 # ============================================================================
@@ -210,12 +212,13 @@ class Mage(Player):
         damage = self.magic + 15
         target.take_damage(damage)
 
+
 class Rogue(Player):
     """
     Rogue class - quick and sneaky fighter.
     Inherits from Player.
     """
-    
+
     def __init__(self, name):
         """
         Create a rogue with appropriate stats.
@@ -223,8 +226,8 @@ class Rogue(Player):
         """
         # TODO: Call super().__init__() with rogue-appropriate stats
         # Suggested stats: health=90, strength=12, magic=10
-        pass
-        
+        super().__init__(name, "Rogue", 90, 12, 10)
+
     def attack(self, target):
         """
         Override the basic attack to make it rogue-specific.
@@ -233,15 +236,19 @@ class Rogue(Player):
         # TODO: Implement rogue attack
         # Could add a chance for critical hit (double damage)
         # Hint: use random.randint(1, 10) and if result <= 3, it's a crit
-        pass
-        
+        damage = self.strength
+        if random.randint(1, 9) <= 3:
+            damage += 15
+        target.take_damage(damage)
+
     def sneak_attack(self, target):
         """
         Special rogue ability - guaranteed critical hit.
         """
         # TODO: Implement sneak attack
         # Should always do critical damage
-        pass
+        damage = self.strength + 15
+        target.take_damage(damage)
 
 class Weapon:
     """
