@@ -79,7 +79,9 @@ class Character:
         # TODO: Implement basic attack
         # Damage should be based on self.strength
         # Use target.take_damage(damage) to apply damage
-        pass
+
+        damage = self.strength
+        target.take_damage(damage)
         
     def take_damage(self, damage):
         """
