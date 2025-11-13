@@ -175,12 +175,13 @@ class Warrior(Player):
         damage = self.strength + 15
         target.take_damage(damage)
 
+
 class Mage(Player):
     """
     Mage class - magical spellcaster.
     Inherits from Player.
     """
-    
+
     def __init__(self, name):
         """
         Create a mage with appropriate stats.
@@ -188,8 +189,8 @@ class Mage(Player):
         """
         # TODO: Call super().__init__() with mage-appropriate stats
         # Suggested stats: health=80, strength=8, magic=20
-        pass
-        
+        super().__init__(name, "Mage", 80, 8, 20)
+
     def attack(self, target):
         """
         Override the basic attack to make it magic-based.
@@ -197,15 +198,17 @@ class Mage(Player):
         """
         # TODO: Implement mage attack
         # Should use self.magic for damage calculation instead of strength
-        pass
-        
+        damage = self.magic + 5
+        target.take_damage(damage)
+
     def fireball(self, target):
         """
         Special mage ability - a powerful magical attack.
         """
         # TODO: Implement fireball spell
         # Should do magic-based damage with bonus
-        pass
+        damage = self.magic + 15
+        target.take_damage(damage)
 
 class Rogue(Player):
     """
