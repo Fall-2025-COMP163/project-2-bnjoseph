@@ -1,9 +1,9 @@
 """
 COMP 163 - Project 2: Character Abilities Showcase
-Name: [Your Name Here]
-Date: [Date]
+Name: Bryce Joseph
+Date: Nov 10 2025
 
-AI Usage: [Document any AI assistance used]
+AI Usage: No AI use
 Example: AI helped with inheritance structure and method overriding concepts
 """
 
@@ -63,7 +63,10 @@ class Character:
         """Initialize basic character attributes"""
         # TODO: Set the character's name, health, strength, and magic
         # These should be stored as instance variables
-        pass
+        self.name = name
+        self.health = health
+        self.strength = strength
+        self.magic = magic
         
     def attack(self, target):
         """
