@@ -154,3 +154,7 @@ Feel free to add your own creative touches for bonus points:
 
 - initialization in player subclass sets the player name, character_class, health, strength, magic, level, and experience with level and experience being set in player subclass
 - display stats for player class displays all stats
+
+- initialization in warrior subclass sets name, character_class, health, strength, and magic for warrior
+- attack in warrior sets damage as strength + 5, damage is done to target
+- power_strike in warrior sets damage as strength + 15 damage is done to target
