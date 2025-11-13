@@ -169,3 +169,6 @@ Feel free to add your own creative touches for bonus points:
 
 - initialization in weapon class sets name, and damage_bonus of weapon
 - display_info in weapon display's weapon info such as name and damage bonus
+
+- 4 special weapon subclasses added, the BattleAxe (damage bonus 25), the Bow, (damage bonus 10), the WarHammer (damage bonus 15), and the Luger (damage bonus 100)
+- The special weapons are weapon subclasses with specific damage bonuses and specific names
