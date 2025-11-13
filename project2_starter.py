@@ -250,25 +250,28 @@ class Rogue(Player):
         damage = self.strength + 15
         target.take_damage(damage)
 
+
 class Weapon:
     """
     Weapon class to demonstrate composition.
     Characters can HAVE weapons (composition, not inheritance).
     """
-    
+
     def __init__(self, name, damage_bonus):
         """
         Create a weapon with a name and damage bonus.
         """
         # TODO: Store weapon name and damage bonus
-        pass
-        
+        self.name = name
+        self.damage_bonus = damage_bonus
+
     def display_info(self):
         """
         Display information about this weapon.
         """
         # TODO: Print weapon name and damage bonus
-        pass
+        print(f"Name: {self.name}")
+        print(f"Damage Bonus: {self.damage_bonus}")
 
 # ============================================================================
 # MAIN PROGRAM FOR TESTING (YOU CAN MODIFY THIS FOR TESTING)
