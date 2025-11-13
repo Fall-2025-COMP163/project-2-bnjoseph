@@ -162,3 +162,7 @@ Feel free to add your own creative touches for bonus points:
 - initialization in mage subclass sets name, character_class as mage, health as 80, strength as 8, and magic as 20
 - attack in mage sets damage as magic + 5, damage is done to target
 - fireball in mage sets damage as magic + 15, damage is done to target
+
+- initialization in rogue subclass sets name, character_class as rogue, health as 90, strength as 12, and magic as 10
+- attack in rogue sets damage equal to strength then gets a random number 1 through 9 inclusive, then if the random number is less than or equal to 3, damage is increased by 15, target takes damage
+- sneak attack in rogue sets damage as strength + 15, target takes damage
