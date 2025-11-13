@@ -166,3 +166,6 @@ Feel free to add your own creative touches for bonus points:
 - initialization in rogue subclass sets name, character_class as rogue, health as 90, strength as 12, and magic as 10
 - attack in rogue sets damage equal to strength then gets a random number 1 through 9 inclusive, then if the random number is less than or equal to 3, damage is increased by 15, target takes damage
 - sneak attack in rogue sets damage as strength + 15, target takes damage
+
+- initialization in weapon class sets name, and damage_bonus of weapon
+- display_info in weapon display's weapon info such as name and damage bonus
