@@ -139,12 +139,13 @@ class Player(Character):
         print(f"Level: {self.level}")
         print(f"Experience: {self.experience}")
 
+
 class Warrior(Player):
     """
     Warrior class - strong physical fighter.
     Inherits from Player.
     """
-    
+
     def __init__(self, name):
         """
         Create a warrior with appropriate stats.
@@ -152,8 +153,8 @@ class Warrior(Player):
         """
         # TODO: Call super().__init__() with warrior-appropriate stats
         # Suggested stats: health=120, strength=15, magic=5
-        pass
-        
+        super().__init__(name, "Warrior", 120, 15, 5)
+
     def attack(self, target):
         """
         Override the basic attack to make it warrior-specific.
@@ -162,15 +163,17 @@ class Warrior(Player):
         # TODO: Implement warrior attack
         # Should do more damage than basic attack
         # Maybe strength + 5 bonus damage?
-        pass
-        
+        damage = self.strength + 5
+        target.take_damage(damage)
+
     def power_strike(self, target):
         """
         Special warrior ability - a powerful attack that does extra damage.
         """
         # TODO: Implement power strike
         # Should do significantly more damage than regular attack
-        pass
+        damage = self.strength + 15
+        target.take_damage(damage)
 
 class Mage(Player):
     """
