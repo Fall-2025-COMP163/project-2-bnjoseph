@@ -151,3 +151,6 @@ Feel free to add your own creative touches for bonus points:
 - damage system in character class is basic, damage is set to equal strength and target takes damage
 - take damage in character class reduces health by damage. If health is less than 0 health is set equal to 0
 - display stats in character class outputs formatted text of name, health, strength, and magic
+
+- initialization in player subclass sets the player name, character_class, health, strength, magic, level, and experience with level and experience being set in player subclass
+- display stats for player class displays all stats
