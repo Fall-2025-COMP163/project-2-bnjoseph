@@ -148,3 +148,4 @@ Feel free to add your own creative touches for bonus points:
 
 ## Read Me Updates
 - initialization in character class sets the character name, health, strength, and magic
+- damage system in character class is basic, damage is set to equal strength and target takes damage
